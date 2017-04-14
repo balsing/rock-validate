@@ -899,6 +899,20 @@ class Validate implements ObjectInterface
                     'ru' => \rock\validate\locale\ru\StringLocale::className(),
                 ]
             ],
+            'RusOnly' => [
+                'class' => \rock\validate\rules\RusOnly::className(),
+                'locales' => [
+                    'en' => \rock\validate\locale\ru\RusOnly::className(),
+                    'ru' => \rock\validate\locale\ru\RusOnly::className(),
+                ]
+            ],
+            'Snils' => [
+                'class' => \rock\validate\rules\snils::className(),
+                'locales' => [
+                    'en' => \rock\validate\locale\ru\snils::className(),
+                    'ru' => \rock\validate\locale\ru\snils::className(),
+                ]
+            ],
             'symbolicLink' => [
                 'class' => SymbolicLink::className(),
                 'locales' => [

@@ -1,8 +1,7 @@
 <?php
 
-namespace app\validate\RusOnly;
 
-use rock\validate\rules\Rule;
+namespace rock\validate\rules;
 
 class RusOnly extends Rule
 {
