@@ -162,7 +162,7 @@ class Validate implements ObjectInterface
      * Default locale.
      * @var string
      */
-    protected $locale = 'en';
+    protected $locale = 'ru';
     /**
      * This is a group validator that acts as an OR operator (if only one condition is valid).
      * @var bool

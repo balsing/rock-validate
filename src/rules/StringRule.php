@@ -5,7 +5,7 @@ namespace rock\validate\rules;
 
 class StringRule extends Rule
 {
-    public $skipEmpty = false;
+    public $skipEmpty = true;
     /**
      * @inheritdoc
      */

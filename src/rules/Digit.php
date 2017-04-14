@@ -4,6 +4,9 @@ namespace rock\validate\rules;
 
 class Digit extends CType
 {
+
+    public $skipEmpty = true;
+    
     /**
      * @inheritdoc
      */

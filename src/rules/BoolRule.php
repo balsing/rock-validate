@@ -11,6 +11,8 @@ class BoolRule extends Rule
      */
     public function validate($input)
     {
+    	if($input==="")
+    		$input = false;
         return is_bool($input);
     }
 } 
