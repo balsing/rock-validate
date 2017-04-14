@@ -1,5 +1,5 @@
 {
-    "name": "romeoz/rock-validate",
+    "name": "balsing/rock-validate",
     "description": "Flexible validator for PHP with I18N.",
     "keywords": ["validate", "validation", "validator"],
     "type": "library",
