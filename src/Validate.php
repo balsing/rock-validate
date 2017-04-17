@@ -359,6 +359,15 @@ class Validate implements ObjectInterface
     }
 
     /**
+     * Returns all errors.
+     * @return array
+     */
+    public function getErrorsFormatted($callback)
+    {
+        return call_user_func($callback,$this->errors);
+    }
+
+    /**
      * Returns first error.
      * @param string|null $attribute
      * @return string|null
