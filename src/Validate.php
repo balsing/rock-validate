@@ -55,6 +55,8 @@ use rock\validate\rules\Readable;
 use rock\validate\rules\Regex;
 use rock\validate\rules\Rule;
 use rock\validate\rules\Space;
+use rock\validate\rules\Snils;
+use rock\validate\rules\RusOnly;
 use rock\validate\rules\StartsWith;
 use rock\validate\rules\SymbolicLink;
 use rock\validate\rules\Uploaded;
@@ -916,10 +918,10 @@ class Validate implements ObjectInterface
                 ]
             ],
             'Snils' => [
-                'class' => \rock\validate\rules\snils::className(),
+                'class' => \rock\validate\rules\Snils::className(),
                 'locales' => [
-                    'en' => \rock\validate\locale\ru\snils::className(),
-                    'ru' => \rock\validate\locale\ru\snils::className(),
+                    'en' => \rock\validate\locale\ru\Snils::className(),
+                    'ru' => \rock\validate\locale\ru\Snils::className(),
                 ]
             ],
             'symbolicLink' => [
