@@ -48,7 +48,7 @@ use rock\validate\rules\Required;
 use rock\validate\rules\NoWhitespace;
 use rock\validate\rules\NullValue;
 use rock\validate\rules\Numeric;
-use rock\validate\rules\Object;
+use rock\validate\rules\ObjectValue;
 use rock\validate\rules\Odd;
 use rock\validate\rules\Positive;
 use rock\validate\rules\Readable;
@@ -112,7 +112,7 @@ use rock\validate\rules\Writable;
  * @method static Validate noWhitespace()
  * @method static Validate nullValue()
  * @method static Validate numeric()
- * @method static Validate object()
+ * @method static Validate objectValue()
  * @method static Validate odd()
  * @method static Validate positive()
  * @method static Validate readable()
@@ -854,11 +854,11 @@ class Validate implements ObjectInterface
                     'ru' =>\rock\validate\locale\ru\Numeric::className(),
                 ]
             ],
-            'object' => [
-                'class' => Object::className(),
+            'objectValue' => [
+                'class' => ObjectValue::className(),
                 'locales' => [
-                    'en' => \rock\validate\locale\en\Object::className(),
-                    'ru' =>\rock\validate\locale\ru\Object::className(),
+                    'en' => \rock\validate\locale\en\ObjectValue::className(),
+                    'ru' =>\rock\validate\locale\ru\ObjectValue::className(),
                 ]
             ],
             'odd' => [
