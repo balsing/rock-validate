@@ -10,7 +10,7 @@ class ObjectTest extends \PHPUnit_Framework_TestCase
      */
     public function testValid($input)
     {
-        $v = Validate::object();
+        $v = Validate::objectValue();
         $this->assertTrue($v->validate($input));
     }
 
@@ -19,7 +19,7 @@ class ObjectTest extends \PHPUnit_Framework_TestCase
      */
     public function testInvalid($input)
     {
-        $v = Validate::object();
+        $v = Validate::objectValue();
         $this->assertFalse($v->validate($input));
         $this->assertFalse($v->validate($input));
     }
